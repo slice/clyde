@@ -1,0 +1,2 @@
+missing-cog-listener:8:A.on_message:Missing @Cog.listener()
+missing-cog-listener:13:B.on_message:Missing @Cog.listener()
