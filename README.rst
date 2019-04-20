@@ -37,6 +37,7 @@ Example:
         async def on_message(self, msg):
             ...
 
-.. WARNING::
-    Unfortunately, this checker only works for the built-in events dispatched by
-    the library. It's up to you to put the decorator on your own events.
++---------------------------------------------------------------------------------+
+| **Caveat:** This checker only works for the built-in events dispatched by the   |
+| library. It's up to you to put the decorator on your own custom event handlers. |
++---------------------------------------------------------------------------------+
