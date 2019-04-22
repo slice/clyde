@@ -20,7 +20,7 @@ class MissingCogListener(ClydeChecker):
 
     def visit_asyncfunctiondef(self, node):
         has_cog_listener_decorator = node.decorators \
-            and any(call.func.attrname == 'listener' for call in node.decorators.nodes)
+            and any(call.func and call.func.attrname == 'listener' for call in node.decorators.nodes)
 
         if (
             node.is_method()
